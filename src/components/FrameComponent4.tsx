@@ -1,4 +1,6 @@
 import { FunctionComponent } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Dropdown, DropdownButton, ButtonGroup, Form } from "react-bootstrap";
 
 export type FrameComponent4Type = {
   className?: string;
@@ -68,19 +70,17 @@ const FrameComponent4: FunctionComponent<FrameComponent4Type> = ({
               </div>
             </div>
           </div>
-          <div className="h-[640px] w-[1635px] relative max-w-full text-left text-base text-dark-blue-sw font-x-hp-title">
-            <div className="absolute top-[0px] left-[1390px] shadow-[3px_3px_14px_rgba(0,_40,_70,_0.2)] rounded-93xl-5 bg-white flex flex-row items-start justify-start py-[15px] px-[29px] gap-[5px] z-[1]">
-              <div className="flex flex-col items-start justify-start pt-[2.5px] px-0 pb-0">
-                <a className="[text-decoration:none] relative text-[inherit] inline-block min-w-[97px] whitespace-nowrap">
-                  Portal Log In
-                </a>
-              </div>
-              <img
-                className="h-[29px] w-[29px] relative min-h-[29px]"
-                alt=""
-                src="/navigation-icons-ibm.svg"
-              />
-            </div>
+          <div className="h-[640px] w-[1635px] relative max-w-full text-left text-58xl text-dark-blue-sw font-x-hp-title">
+            <DropdownButton
+              className="absolute top-[0px] left-[1390px] shadow-[3px_3px_14px_rgba(0,_40,_70,_0.2)] z-[1]"
+              as={ButtonGroup}
+              style={{
+                width: "190",
+                height: "59",
+                backgroundColor: "#fff",
+                borderRadius: "112.5px",
+              }}
+            >{` `}</DropdownButton>
             <button className="cursor-pointer [border:none] py-[15.5px] px-[37px] bg-dark-blue-sw absolute top-[522px] left-[0px] rounded-93xl-5 flex flex-row items-start justify-start whitespace-nowrap z-[1] hover:bg-steelblue">
               <div className="relative text-base font-x-hp-title text-white text-left inline-block min-w-[115px]">
                 ROI Calculator
@@ -91,7 +91,7 @@ const FrameComponent4: FunctionComponent<FrameComponent4Type> = ({
                 Schedule a Demo
               </div>
             </button>
-            <h1 className="m-0 absolute top-[171px] left-[0px] text-58xl tracking-[-0.02em] leading-[73px] font-normal font-inherit flex items-center w-[667px] h-[146px] z-[1]">
+            <h1 className="m-0 absolute top-[171px] left-[0px] text-inherit tracking-[-0.02em] leading-[73px] font-normal font-inherit flex items-center w-[667px] h-[146px] z-[1]">
               Turn your data into revenue
             </h1>
             <div className="absolute top-[337px] left-[0px] text-xl tracking-[-0.02em] leading-[32px] text-light-text-sw inline-block w-[533px] h-24 z-[1]">
@@ -99,51 +99,15 @@ const FrameComponent4: FunctionComponent<FrameComponent4Type> = ({
               AI and Machine Learning, extracting and analyzing shipping data in
               seconds
             </div>
-            <div className="absolute top-[17px] left-[420px] w-[740px] flex flex-row items-start justify-between gap-[20px] max-w-full z-[1]">
-              <a className="[text-decoration:underline] w-[61px] relative text-blue-sw flex items-center shrink-0">
+            <div className="absolute top-[17px] left-[420px] w-[740px] flex flex-row items-start justify-between gap-[20px] max-w-full z-[1] text-base text-blue-sw">
+              <a className="[text-decoration:underline] w-[61px] relative text-[inherit] flex items-center shrink-0">
                 Home
               </a>
-              <div className="flex flex-row items-start justify-start">
-                <a className="[text-decoration:none] relative text-[inherit] inline-block min-w-[80px]">
-                  Solutions
-                </a>
-                <img
-                  className="h-6 w-6 relative object-cover min-h-[24px]"
-                  alt=""
-                  src="/component-4@2x.png"
-                />
-              </div>
-              <div className="flex flex-row items-start justify-start">
-                <a className="[text-decoration:none] relative text-[inherit] inline-block min-w-[90px] whitespace-nowrap">
-                  Use Cases
-                </a>
-                <img
-                  className="h-6 w-6 relative object-cover min-h-[24px]"
-                  alt=""
-                  src="/component-4@2x.png"
-                />
-              </div>
-              <div className="flex flex-row items-start justify-start">
-                <a className="[text-decoration:none] relative text-[inherit] inline-block min-w-[90px]">
-                  Resources
-                </a>
-                <img
-                  className="h-6 w-6 relative object-cover min-h-[24px]"
-                  alt=""
-                  src="/component-4@2x.png"
-                />
-              </div>
-              <div className="w-20 flex flex-row items-start justify-start">
-                <a className="[text-decoration:none] flex-1 relative text-[inherit]">
-                  About
-                </a>
-                <img
-                  className="h-6 w-6 relative object-cover min-h-[24px]"
-                  alt=""
-                  src="/component-4@2x.png"
-                />
-              </div>
-              <a className="[text-decoration:none] relative text-[inherit] inline-block min-w-[67px]">
+              <Form.Select className="font-x-hp-title text-base text-dark-blue-sw" />
+              <Form.Select className="font-x-hp-title text-base text-dark-blue-sw" />
+              <select className="bg-[transparent] [border:none] flex flex-row items-start justify-start font-x-hp-title text-base text-dark-blue-sw" />
+              <select className="w-20 bg-[transparent] [border:none] flex flex-row items-start justify-start font-x-hp-title text-base text-dark-blue-sw" />
+              <a className="[text-decoration:none] relative text-dark-blue-sw inline-block min-w-[67px]">
                 Contact
               </a>
             </div>

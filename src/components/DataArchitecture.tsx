@@ -1,4 +1,6 @@
 import { FunctionComponent } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Form } from "react-bootstrap";
 import FrameComponent from "./FrameComponent";
 
 export type DataArchitectureType = {
@@ -25,38 +27,16 @@ const DataArchitecture: FunctionComponent<DataArchitectureType> = ({
               origin to destination.
             </div>
           </div>
-          <div className="w-[685px] flex flex-col items-start justify-start gap-[18.1px] max-w-full text-lg-8">
+          <div className="w-[685px] flex flex-col items-start justify-start gap-[18.1px] max-w-full">
             <div className="self-stretch h-[0.9px] flex flex-row items-start justify-start py-0 pr-0 pl-[3px] box-border max-w-full">
               <div className="self-stretch flex-1 relative box-border max-w-full border-t-[0.9px] border-solid border-line-sw" />
             </div>
             <div className="w-[658.8px] flex flex-row items-start justify-start py-0 px-2 box-border max-w-full shrink-0">
-              <div className="flex-1 flex flex-row items-start justify-start gap-[34.9px] max-w-full mq925:flex-wrap mq925:gap-[17px]">
-                <div className="flex-1 relative leading-[117.5%] inline-block min-w-[272px] max-w-full">
-                  Supply Chain Management Usecase
-                </div>
-                <div className="flex flex-col items-start justify-start pt-[4.3px] px-0 pb-0">
-                  <img
-                    className="w-[17.9px] h-[10.7px] relative object-contain"
-                    alt=""
-                    src="/vector.svg"
-                  />
-                </div>
-              </div>
+              <Form.Select className="flex-1 font-x-hp-title text-lg-8 text-dark-blue-sw max-w-full mq925:flex-wrap mq925:gap-[17px]" />
             </div>
             <div className="self-stretch h-[0.9px] relative box-border border-t-[0.9px] border-solid border-line-sw" />
             <div className="w-[657.8px] flex flex-row items-start justify-start py-0 px-[7px] box-border max-w-full shrink-0">
-              <div className="flex-1 flex flex-row items-start justify-start gap-[40px] max-w-full mq925:flex-wrap mq925:gap-[20px]">
-                <div className="flex-1 relative leading-[117.5%] inline-block min-w-[185px] max-w-full">
-                  Freight Logistics Usecase
-                </div>
-                <div className="flex flex-col items-start justify-start pt-[4.3px] px-0 pb-0">
-                  <img
-                    className="w-[17.9px] h-[10.7px] relative object-contain"
-                    alt=""
-                    src="/vector.svg"
-                  />
-                </div>
-              </div>
+              <Form.Select className="flex-1 font-x-hp-title text-lg-8 text-dark-blue-sw max-w-full mq925:flex-wrap mq925:gap-[20px]" />
             </div>
             <div className="self-stretch h-[0.9px] relative box-border border-t-[0.9px] border-solid border-line-sw" />
           </div>
