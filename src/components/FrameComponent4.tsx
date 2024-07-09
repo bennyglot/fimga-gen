@@ -81,7 +81,7 @@ const FrameComponent4: FunctionComponent<FrameComponent4Type> = ({
                 borderRadius: "112.5px",
               }}
             >{` `}</DropdownButton>
-            <button className="cursor-pointer [border:none] py-[15.5px] px-[37px] bg-dark-blue-sw absolute top-[522px] left-[0px] rounded-93xl-5 flex flex-row items-start justify-start whitespace-nowrap z-[1] hover:bg-steelblue">
+            <button className="cursor-pointer [border:none] py-[15.5px] px-[37px] bg-dark-blue-sw absolute top-[522px] left-[0px] rounded-93xl-5 flex flex-row items-start justify-start whitespace-nowrap z-[1] hover:bg-steelblue-100">
               <div className="relative text-base font-x-hp-title text-white text-left inline-block min-w-[115px]">
                 ROI Calculator
               </div>

@@ -12,15 +12,16 @@ module.exports = {
         "dark-blue-sw": "#002846",
         dimgray: "#555",
         "light-background-sw": "#f4f6f8",
-        gray: {
-          "100": "rgba(0, 40, 70, 0.7)",
-          "200": "rgba(0, 40, 70, 0.3)",
-        },
+        "dark-blue": "rgba(0, 40, 70, 0.3)",
         "blue-sw": "#187bdc",
         grey: "#505a64",
+        gray: "rgba(0, 40, 70, 0.7)",
         saddlebrown: "#54351c",
         dodgerblue: "#3094f5",
-        steelblue: "#335c7a",
+        steelblue: {
+          "100": "#335c7a",
+          "200": "rgba(51, 92, 122, 0.3)",
+        },
       },
       spacing: {},
       fontFamily: {
@@ -70,6 +71,10 @@ module.exports = {
       "6xl": "25px",
       "2xl": "21px",
       "58xl": "77px",
+      "17xl": "36px",
+      "7xl": "26px",
+      "25xl": "44px",
+      "16xl": "35px",
       inherit: "inherit",
     },
     screens: {

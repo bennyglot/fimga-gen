@@ -22,7 +22,7 @@ const GroupComponent: FunctionComponent<GroupComponentType> = ({
           <div className="self-stretch flex flex-row items-start justify-start gap-[29.7px] text-base-1 text-blue-sw mq925:flex-wrap">
             <div className="flex-1 flex flex-row items-start justify-start pt-[3px] px-0 pb-2 box-border relative min-w-[92px] z-[1]">
               <input
-                className="w-full [border:none] [outline:none] font-medium font-x-hp-title text-base-1 bg-[transparent] h-[19px] flex-1 relative tracking-[-0.02em] leading-[30px] text-gray-200 text-left flex items-center min-w-[85px] p-0"
+                className="w-full [border:none] [outline:none] font-medium font-x-hp-title text-base-1 bg-[transparent] h-[19px] flex-1 relative tracking-[-0.02em] leading-[30px] text-dark-blue text-left flex items-center min-w-[85px] p-0"
                 placeholder="Shipping Lines"
                 type="text"
               />
@@ -34,7 +34,7 @@ const GroupComponent: FunctionComponent<GroupComponentType> = ({
               </div>
               <div className="h-[30px] w-[141.3px] relative box-border hidden border-b-[2px] border-solid border-blue-sw" />
             </div>
-            <div className="flex flex-row items-start justify-start pt-[3px] px-0 pb-2 relative z-[1] text-gray-200">
+            <div className="flex flex-row items-start justify-start pt-[3px] px-0 pb-2 relative z-[1] text-dark-blue">
               <div className="relative tracking-[-0.02em] leading-[19px] font-medium">
                 Domestic Truckers
               </div>

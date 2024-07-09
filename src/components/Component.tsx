@@ -1,20 +1,18 @@
 import { FunctionComponent } from "react";
 
-export type CustomerQuoteType = {
+export type ComponentType = {
   className?: string;
 };
 
-const CustomerQuote: FunctionComponent<CustomerQuoteType> = ({
-  className = "",
-}) => {
+const Component: FunctionComponent<ComponentType> = ({ className = "" }) => {
   return (
     <section
-      className={`self-stretch flex flex-row items-end justify-between pt-[48.2px] px-[250px] pb-[71.6px] box-border relative max-w-full gap-[20px] text-left text-21xl text-dark-blue-sw font-x-hp-title mq450:pt-[31px] mq450:pb-[47px] mq450:box-border mq925:pl-[62px] mq925:pr-[62px] mq925:box-border mq1350:pl-[125px] mq1350:pr-[125px] mq1350:box-border mq1825:flex-wrap mq1825:justify-center ${className}`}
+      className={`self-stretch flex flex-row items-end justify-between pt-[48.2px] px-[250px] pb-[71.6px] box-border relative max-w-full gap-[20px] text-left text-21xl text-dark-blue-sw font-x-hp-title mq925:pl-[62px] mq925:pr-[62px] mq925:box-border mq1350:pl-[125px] mq1350:pr-[125px] mq1350:box-border mq1825:flex-wrap mq450:pt-[31px] mq450:pb-[47px] mq450:box-border ${className}`}
     >
       <div className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] bg-light-background-sw" />
       <div className="w-[700px] flex flex-col items-start justify-end pt-0 px-0 pb-2 box-border min-w-[700px] max-w-full mq1350:min-w-full mq1825:flex-1">
         <div className="self-stretch flex flex-col items-start justify-start gap-[11.8px] max-w-full z-[1]">
-          <h1 className="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[60px] font-medium font-inherit mq450:text-5xl mq450:leading-[36px] mq925:text-13xl mq925:leading-[48px]">
+          <h1 className="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[60px] font-medium font-inherit mq925:text-13xl mq925:leading-[48px] mq450:text-5xl mq450:leading-[36px]">
             Success Stories
           </h1>
           <div className="w-[534px] h-[128.9px] relative text-lgi tracking-[-0.02em] leading-[33.28px] text-gray inline-block shrink-0 max-w-full">
@@ -50,4 +48,4 @@ const CustomerQuote: FunctionComponent<CustomerQuoteType> = ({
   );
 };
 
-export default CustomerQuote;
+export default Component;

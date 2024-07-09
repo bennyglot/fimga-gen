@@ -124,7 +124,7 @@ const FrameComponent1: FunctionComponent<FrameComponent1Type> = ({
                 />
               </div>
             </div>
-            <div className="w-[603px] relative text-xl tracking-[-0.02em] leading-[32px] text-gray-100 whitespace-pre-wrap text-left inline-block shrink-0 max-w-full mq450:text-base mq450:leading-[26px]">{`With  StarDox, you gain centralized access to precise, structured shipping data, in-depth analytics and reporting for valuable insights on process improvements. `}</div>
+            <div className="w-[603px] relative text-xl tracking-[-0.02em] leading-[32px] text-gray whitespace-pre-wrap text-left inline-block shrink-0 max-w-full mq450:text-base mq450:leading-[26px]">{`With  StarDox, you gain centralized access to precise, structured shipping data, in-depth analytics and reporting for valuable insights on process improvements. `}</div>
           </div>
         </div>
       </div>
