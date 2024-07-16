@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import Login from "./Login1";
+import Login from "./Login";
 
 export type FooterSWType = {
   className?: string;
@@ -89,7 +89,7 @@ const FooterSW: FunctionComponent<FooterSWType> = ({ className = "" }) => {
                   className="h-[19.7px] w-[19.7px] relative overflow-hidden shrink-0"
                   loading="lazy"
                   alt=""
-                  src="/radixiconsinstagramlogo1.svg"
+                  src="/radixiconsinstagramlogo.svg"
                 />
               </div>
               <div className="h-[32.8px] w-[32.8px] rounded-lg bg-bluish-grey-sw flex flex-row items-center justify-start py-[6.6px] px-1.5 box-border">
@@ -97,7 +97,7 @@ const FooterSW: FunctionComponent<FooterSWType> = ({ className = "" }) => {
                   className="h-[19.7px] w-[19.7px] relative overflow-hidden shrink-0"
                   loading="lazy"
                   alt=""
-                  src="/rilinkedinfill1.svg"
+                  src="/rilinkedinfill.svg"
                 />
               </div>
               <div className="h-[32.8px] w-[32.8px] rounded-lg bg-bluish-grey-sw flex flex-row items-center justify-start py-[6.6px] px-1.5 box-border">
@@ -105,7 +105,7 @@ const FooterSW: FunctionComponent<FooterSWType> = ({ className = "" }) => {
                   className="h-[19.7px] w-[19.7px] relative overflow-hidden shrink-0"
                   loading="lazy"
                   alt=""
-                  src="/rifacebookboxfill11.svg"
+                  src="/rifacebookboxfill1.svg"
                 />
               </div>
             </div>

@@ -22,6 +22,8 @@ module.exports = {
           "100": "#335c7a",
           "200": "rgba(51, 92, 122, 0.3)",
         },
+        remarks: "#ff1f00",
+        lightslategray: "#899eb5",
       },
       spacing: {},
       fontFamily: {
@@ -37,6 +39,7 @@ module.exports = {
         "93xl-5": "112.5px",
         "3xs": "10px",
         "43xl-3": "62.3px",
+        "9xs": "4px",
       },
     },
     fontSize: {
@@ -75,6 +78,8 @@ module.exports = {
       "7xl": "26px",
       "25xl": "44px",
       "16xl": "35px",
+      "mini-2": "14.2px",
+      "base-2": "16.2px",
       inherit: "inherit",
     },
     screens: {

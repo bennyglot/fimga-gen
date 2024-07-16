@@ -10,6 +10,7 @@ import UsecasesShippersProcurem from "./pages/UsecasesShippersProcurem";
 import UsecasesShippersSales from "./pages/UsecasesShippersSales";
 import UsecasesShippersOperatio from "./pages/UsecasesShippersOperatio";
 import UsecasesShippersProcurem from "./pages/UsecasesShippersProcurem1";
+import PartnersSectionLogisticCl from "./pages/PartnersSectionLogisticCl";
 
 function App() {
   const action = useNavigationType();
@@ -47,6 +48,10 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/partners-section-logistic-cloud":
+        title = "";
+        metaDescription = "";
+        break;
     }
 
     if (title) {
@@ -81,6 +86,10 @@ function App() {
       <Route
         path="/usecases-shippers-procurement-carrier-spot-buy-prices"
         element={<UsecasesShippersProcurem />}
+      />
+      <Route
+        path="/partners-section-logistic-cloud"
+        element={<PartnersSectionLogisticCl />}
       />
     </Routes>
   );

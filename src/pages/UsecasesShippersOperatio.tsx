@@ -2,11 +2,11 @@ import { FunctionComponent } from "react";
 import DeepCenter from "../components/DeepCenter";
 import MenuExpand from "../components/MenuExpand";
 import Bottom from "../components/Bottom";
-import FrameComponent1 from "../components/FrameComponent11";
-import FrameComponent from "../components/FrameComponent12";
+import FrameComponent1 from "../components/FrameComponent1";
+import FrameComponent from "../components/FrameComponent";
 import Component from "../components/Component";
-import ROIBottomBanner from "../components/ROIBottomBanner1";
-import FooterSW from "../components/FooterSW1";
+import ROIBottomBanner from "../components/ROIBottomBanner";
+import FooterSW from "../components/FooterSW";
 
 const UsecasesShippersOperatio: FunctionComponent = () => {
   return (

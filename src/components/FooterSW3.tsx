@@ -1,5 +1,7 @@
 import { FunctionComponent } from "react";
-import FrameComponent from "./FrameComponent";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Form } from "react-bootstrap";
+import Login from "./Login";
 
 export type FooterSWType = {
   className?: string;
@@ -8,20 +10,15 @@ export type FooterSWType = {
 const FooterSW: FunctionComponent<FooterSWType> = ({ className = "" }) => {
   return (
     <footer
-      className={`self-stretch flex flex-col items-start justify-start pt-[31px] px-[251px] pb-[50px] box-border relative gap-[26px] max-w-full z-[3] mt-[-1px] text-left text-mini text-dark-blue-sw font-x-hp-title mq925:pl-[62px] mq925:pr-[62px] mq925:pb-8 mq925:box-border mq1350:pl-[125px] mq1350:pr-[125px] mq1350:box-border ${className}`}
+      className={`self-stretch flex flex-col items-start justify-start pt-[31px] px-[251px] pb-[50px] box-border relative gap-[34px] max-w-full text-left text-mini text-dark-blue-sw font-x-hp-title mq1350:pl-[125px] mq1350:pr-[125px] mq1350:box-border mq900:gap-[17px] mq900:pt-5 mq900:px-[62px] mq900:pb-8 mq900:box-border ${className}`}
     >
       <div className="w-full h-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] bg-light-background-sw" />
       <div className="w-[153px] h-[54px] absolute !m-[0] top-[32px] left-[251px] z-[1]" />
-      <img
-        className="w-[153px] h-[51px] relative z-[2]"
-        alt=""
-        src="/stargo-logo-11.svg"
-      />
-      <div className="w-[1387px] h-[9px] flex flex-row items-start justify-start pt-0 px-0 pb-2 box-border max-w-full">
-        <div className="self-stretch flex-1 relative bg-line-sw box-border max-w-full z-[1] border-t-[1px] border-solid border-line-sw" />
-      </div>
-      <div className="w-[1387px] flex flex-row items-start justify-between pt-0 px-0 pb-[19.9px] box-border max-w-full gap-[20px] mq1825:flex-wrap">
-        <div className="w-[900px] flex flex-row items-start justify-start min-w-[900px] [row-gap:20px] max-w-full mq1350:flex-wrap mq1825:flex-1 mq1825:min-w-full">
+      <Form className="w-[1387px] [border:none] bg-[transparent] h-[78px] max-w-full">
+        <Form.Control type="text" />
+      </Form>
+      <div className="w-[1387px] flex flex-row items-start justify-between pt-0 px-0 pb-[11.9px] box-border max-w-full gap-[20px] mq1750:flex-wrap">
+        <div className="w-[900px] flex flex-row items-start justify-start min-w-[900px] [row-gap:20px] max-w-full mq1350:flex-wrap mq1750:flex-1 mq1750:min-w-full">
           <div className="w-[180px] flex flex-col items-start justify-start gap-[9px]">
             <div className="w-20 relative flex items-center z-[1]">
               Solutions
@@ -79,7 +76,7 @@ const FooterSW: FunctionComponent<FooterSWType> = ({ className = "" }) => {
             </div>
           </div>
         </div>
-        <div className="h-[247.1px] flex flex-col items-start justify-start pt-0 px-0 pb-[91.4px] box-border gap-[19.8px] min-w-[320px] text-mini-8 text-dimgray mq1825:flex-1">
+        <div className="flex flex-col items-start justify-start gap-[19.8px] min-w-[320px] text-mini-8 text-dimgray mq1750:flex-1">
           <div className="flex flex-col items-start justify-start pt-0 px-0 pb-[0.1px] gap-[9.8px] z-[1]">
             <div className="relative">Follow us and stay up to date</div>
             <div className="flex flex-row items-start justify-start gap-[13.2px]">
@@ -88,7 +85,7 @@ const FooterSW: FunctionComponent<FooterSWType> = ({ className = "" }) => {
                   className="h-[19.7px] w-[19.7px] relative overflow-hidden shrink-0"
                   loading="lazy"
                   alt=""
-                  src="/radixiconsinstagramlogo.svg"
+                  src="/radixiconsinstagramlogo1.svg"
                 />
               </div>
               <div className="h-[32.8px] w-[32.8px] rounded-lg bg-bluish-grey-sw flex flex-row items-center justify-start py-[6.6px] px-1.5 box-border">
@@ -96,7 +93,7 @@ const FooterSW: FunctionComponent<FooterSWType> = ({ className = "" }) => {
                   className="h-[19.7px] w-[19.7px] relative overflow-hidden shrink-0"
                   loading="lazy"
                   alt=""
-                  src="/rilinkedinfill.svg"
+                  src="/rilinkedinfill1.svg"
                 />
               </div>
               <div className="h-[32.8px] w-[32.8px] rounded-lg bg-bluish-grey-sw flex flex-row items-center justify-start py-[6.6px] px-1.5 box-border">
@@ -109,11 +106,11 @@ const FooterSW: FunctionComponent<FooterSWType> = ({ className = "" }) => {
               </div>
             </div>
           </div>
-          <FrameComponent
+          <Login
             existingStarDoxUsersLogin="Existing StarDox users login page"
             portalSignIn="Portal Sign In"
           />
-          <FrameComponent
+          <Login
             existingStarDoxUsersLogin="Check how much you can save with Stargo"
             portalSignIn="ROI Calculator"
           />
