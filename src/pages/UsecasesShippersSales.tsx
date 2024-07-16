@@ -74,7 +74,7 @@ const UsecasesShippersSales: FunctionComponent = () => {
             className="h-[540px] flex-1 relative max-w-full overflow-hidden object-cover min-w-[506px] z-[1] mq1350:min-w-full"
             loading="lazy"
             alt=""
-            src="/homepage-secondary--eliminate-human-error--2@2x.png"
+            src="/homepage-secondary--eliminate-human-error--21@2x.png"
           />
         </div>
       </section>
@@ -83,9 +83,9 @@ const UsecasesShippersSales: FunctionComponent = () => {
         <ROIBottomBanner propFlex="unset" propAlignSelf="stretch" />
         <FooterSW
           stargoLogo="/stargo-logo-11.svg"
-          radixIconsinstagramLogo="/radixiconsinstagramlogo.svg"
-          rilinkedinFill="/rilinkedinfill.svg"
-          rifacebookBoxFill="/rifacebookboxfill.svg"
+          radixIconsinstagramLogo="/radixiconsinstagramlogo1.svg"
+          rilinkedinFill="/rilinkedinfill1.svg"
+          rifacebookBoxFill="/rifacebookboxfill1.svg"
           propMarginTop="-1px"
         />
       </section>

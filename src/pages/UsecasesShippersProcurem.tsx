@@ -85,9 +85,9 @@ const UsecasesShippersProcurem: FunctionComponent = () => {
         <ROIBottomBanner propFlex="unset" propAlignSelf="stretch" />
         <FooterSW
           stargoLogo="/stargo-logo-11.svg"
-          radixIconsinstagramLogo="/radixiconsinstagramlogo.svg"
-          rilinkedinFill="/rilinkedinfill.svg"
-          rifacebookBoxFill="/rifacebookboxfill.svg"
+          radixIconsinstagramLogo="/radixiconsinstagramlogo1.svg"
+          rilinkedinFill="/rilinkedinfill1.svg"
+          rifacebookBoxFill="/rifacebookboxfill1.svg"
           propMarginTop="-1px"
         />
       </section>
