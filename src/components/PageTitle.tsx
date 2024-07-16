@@ -42,7 +42,7 @@ const PageTitle: FunctionComponent<PageTitleType> = ({ className = "" }) => {
               <img
                 className="w-1.5 h-[10.6px] relative object-contain"
                 alt=""
-                src="/expand-more-1.svg"
+                src="/expand-more-11.svg"
               />
             </div>
             <div className="relative tracking-[-0.02em] leading-[28px] text-dark-blue-sw inline-block min-w-[128px]">

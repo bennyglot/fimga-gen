@@ -1,77 +1,76 @@
 import { FunctionComponent } from "react";
+import AccuracyCategory from "./AccuracyCategory";
 
-export type FrameComponentType = {
+export type FrameComponent5Type = {
   className?: string;
 };
 
-const FrameComponent: FunctionComponent<FrameComponentType> = ({
+const FrameComponent5: FunctionComponent<FrameComponent5Type> = ({
   className = "",
 }) => {
   return (
     <section
-      className={`self-stretch bg-white flex flex-col items-start justify-start pt-[71px] pb-[35px] pr-[209px] pl-[250px] box-border gap-[37px] max-w-full text-center text-17xl text-dark-blue-sw font-x-hp-title mq925:gap-[18px] mq925:pt-[46px] mq925:pb-[23px] mq925:pr-[52px] mq925:pl-[62px] mq925:box-border mq1350:pl-[125px] mq1350:pr-[104px] mq1350:box-border mq450:pt-[30px] mq450:pb-5 mq450:box-border ${className}`}
+      className={`self-stretch flex flex-row items-start justify-center pt-0 px-5 pb-[102px] box-border max-w-full text-center text-17xl text-light-text-sw font-x-hp-title mq925:pb-[43px] mq925:box-border mq1350:pb-[66px] mq1350:box-border ${className}`}
     >
-      <div className="w-[1900px] h-[800px] relative bg-white hidden max-w-full" />
-      <div className="w-[1400px] flex flex-col items-start justify-start gap-[27px] max-w-full">
-        <div className="self-stretch flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
-          <h1 className="m-0 w-[646px] relative text-inherit tracking-[-0.02em] leading-[60px] font-normal font-inherit inline-block shrink-0 max-w-full z-[1] mq925:text-10xl mq925:leading-[48px] mq450:text-3xl mq450:leading-[36px]">
-            Stargo Benefits
-          </h1>
-        </div>
-        <div className="self-stretch flex flex-row flex-wrap items-start justify-center gap-[36px] max-w-full text-base-1 text-bluish-grey-sw mq925:gap-[18px]">
-          <div className="flex-1 flex flex-row items-start justify-start pt-1.5 px-0 pb-[5px] box-border relative min-w-[297px] max-w-full z-[1]">
-            <div className="flex-1 relative tracking-[-0.02em] leading-[19px] font-medium inline-block max-w-full">
-              Enhanced Customer Satisfaction
+      <div className="w-[1388px] flex flex-col items-start justify-start gap-[55px] max-w-full mq925:gap-[27px]">
+        <div className="w-[1364px] flex flex-row items-start justify-start py-0 px-3 box-border max-w-full shrink-0">
+          <div className="flex-1 flex flex-col items-end justify-start gap-[31.6px] max-w-full mq925:gap-[16px]">
+            <div className="w-[1315px] flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
+              <div className="w-[1011px] flex flex-col items-start justify-start max-w-full">
+                <div className="self-stretch flex flex-row items-start justify-center py-0 pr-[21px] pl-5 box-border max-w-full">
+                  <h1 className="m-0 w-[646px] relative text-inherit tracking-[-0.02em] leading-[60px] font-normal font-inherit inline-block shrink-0 max-w-full z-[1] mq925:text-10xl mq925:leading-[48px] mq450:text-3xl mq450:leading-[36px]">
+                    <p className="[margin-block-start:0] [margin-block-end:1px]">
+                      Stargo Solution by Numbers
+                    </p>
+                  </h1>
+                </div>
+                <h1 className="m-0 self-stretch h-[50px] relative text-25xl tracking-[-0.02em] leading-[60px] font-medium font-inherit text-dark-blue-sw inline-block mt-[-4.7px] mq925:text-16xl mq925:leading-[48px] mq450:text-7xl mq450:leading-[36px]">
+                  Zero error. Maximum customer satisfaction.
+                </h1>
+              </div>
             </div>
-            <div className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] box-border z-[1] border-b-[1px] border-solid border-bluish-grey-sw" />
-          </div>
-          <div className="flex-1 flex flex-row items-start justify-start pt-1.5 px-0 pb-[5px] box-border relative min-w-[297px] max-w-full z-[1]">
-            <div className="flex-1 relative tracking-[-0.02em] leading-[19px] inline-block max-w-full">
-              Increased Productivity
-            </div>
-            <div className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] box-border z-[1] border-b-[1px] border-solid border-bluish-grey-sw" />
-          </div>
-          <div className="flex-1 flex flex-row items-start justify-start pt-1.5 px-0 pb-[5px] box-border relative min-w-[297px] max-w-full z-[1]">
-            <div className="flex-1 relative tracking-[-0.02em] leading-[19px] inline-block max-w-full">
-              Improved Deliverability
-            </div>
-            <div className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] box-border z-[1] border-b-[1px] border-solid border-bluish-grey-sw" />
-          </div>
-          <div className="flex-1 flex flex-row items-start justify-start pt-1.5 px-0 pb-[5px] box-border relative min-w-[297px] max-w-full z-[1] text-blue-sw">
-            <div className="flex-1 relative tracking-[-0.02em] leading-[19px] inline-block max-w-full">
-              Eliminate Human Error
-            </div>
-            <div className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] box-border z-[1] border-b-[1px] border-solid border-blue-sw" />
-          </div>
-        </div>
-      </div>
-      <div className="self-stretch flex flex-row items-start justify-start gap-[76px] max-w-full text-left text-31xl mq925:gap-[38px] mq1825:flex-wrap mq450:gap-[19px]">
-        <div className="w-[586px] flex flex-col items-start justify-start pt-[75px] px-0 pb-0 box-border min-w-[586px] max-w-full mq1350:min-w-full mq1825:flex-1 mq450:pt-[49px] mq450:box-border">
-          <div className="self-stretch flex flex-col items-start justify-start gap-[20px] max-w-full">
-            <h1 className="m-0 w-[562px] relative text-inherit tracking-[-0.02em] leading-[60px] font-medium font-inherit inline-block max-w-full z-[1] mq925:text-21xl mq925:leading-[48px] mq450:text-11xl mq450:leading-[36px]">
-              <p className="[margin-block-start:0] [margin-block-end:1px]">
-                Eliminate
-              </p>
-              <p className="m-0">Human Error</p>
-            </h1>
-            <div className="self-stretch relative text-xl tracking-[-0.02em] leading-[32px] text-light-text-sw z-[1] mq450:text-base mq450:leading-[26px]">
-              Human data management is a liability for shippers, resulting in
-              costly errors, undercharged shipments, and poor customer
-              experiences. Stargo delivers end-to-end automation and 100% data
-              accuracy, streamlining the shipping processes at every stage of
-              its lifecycle. 
+            <div className="self-stretch relative text-xl tracking-[-0.02em] leading-[32px] mq450:text-base mq450:leading-[26px]">
+              Stargo uses advanced GenAI and ML to streamline PO processing,
+              eliminating manual data entry errors and improving semi-structured
+              data quality from APIs and EDIs to 100% accuracy. Automatic
+              invoice generation and return expedites the sales cycle by
+              reducing response times for enhanced customer satisfaction.
             </div>
           </div>
         </div>
-        <img
-          className="h-[540px] flex-1 relative max-w-full overflow-hidden object-cover min-w-[506px] z-[1] mq1350:min-w-full"
-          loading="lazy"
-          alt=""
-          src="/homepage-secondary--eliminate-human-error--2@2x.png"
-        />
+        <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[56px] max-w-full shrink-0 text-7xl text-dark-blue-sw mq925:gap-[28px]">
+          <AccuracyCategory
+            allWebsiteIcons5="/all-website-icons5@2x.png"
+            purchaseOrderAccuracy="Purchase order accuracy"
+            prop="30% → 100%"
+          />
+          <AccuracyCategory
+            allWebsiteIcons5="/all-website-icons3-1@2x.png"
+            purchaseOrderAccuracy="Invoice accuracy"
+            prop="60% → 100%"
+            propGap="23px"
+            propPadding="57px 36px 35px 41px"
+          />
+        </div>
+        <div className="self-stretch flex flex-row flex-wrap items-start justify-start gap-[56px] max-w-full shrink-0 mq925:gap-[28px]">
+          <AccuracyCategory
+            allWebsiteIcons5="/all-website-icons18-1@2x.png"
+            purchaseOrderAccuracy="Deliverability improvement"
+            prop="+5%"
+            propGap="21px"
+            propPadding="38px 38px 35px"
+          />
+          <AccuracyCategory
+            allWebsiteIcons5="/all-website-icons112@2x.png"
+            purchaseOrderAccuracy="Productivity improvement"
+            prop="+26%"
+            propGap="24px"
+            propPadding="42px 36px 35px"
+          />
+        </div>
       </div>
     </section>
   );
 };
 
-export default FrameComponent;
+export default FrameComponent5;

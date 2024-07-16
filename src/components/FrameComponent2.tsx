@@ -1,6 +1,5 @@
 import { FunctionComponent } from "react";
 import GroupComponent1 from "./GroupComponent1";
-import FrameComponent3 from "./FrameComponent3";
 import ProductivityIcon from "./ProductivityIcon";
 
 export type FrameComponent2Type = {
@@ -63,16 +62,25 @@ const FrameComponent2: FunctionComponent<FrameComponent2Type> = ({
                 </div>
               </div>
             </div>
-            <div className="w-[1393px] flex flex-row items-end justify-start gap-[142px] max-w-full mq450:gap-[18px] mq925:gap-[35px] mq1350:flex-wrap mq1350:gap-[71px]">
-              <FrameComponent3
-                transformYourFreightDocum="Solving the 20%"
-                actionableInsights="Revenue Leak: Structured Data for Success!"
-                stardoxAGenAiPoweredSolut="The freight logistics and supply chain industry's data problem hampers automation, growth, and customer acquisition. Solving it through reliable, structured data is key to future success"
-                propWidth="unset"
-                propFlexDirection="column"
-                propFlex="1"
-                propMinWidth="431px"
-              />
+            <div className="w-[1393px] flex flex-row items-end justify-start gap-[142px] max-w-full text-left text-31xl mq450:gap-[18px] mq925:gap-[35px] mq1350:flex-wrap mq1350:gap-[71px]">
+              <div className="flex-1 flex flex-col items-start justify-end pt-0 px-0 pb-1.5 box-border min-w-[431px] max-w-full mq925:min-w-full">
+                <div className="self-stretch flex flex-col items-start justify-start gap-[25px] max-w-full">
+                  <h1 className="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[60px] font-medium font-inherit mq450:text-11xl mq450:leading-[36px] mq925:text-21xl mq925:leading-[48px]">
+                    <p className="[margin-block-start:0] [margin-block-end:1px]">
+                      Solving the 20%
+                    </p>
+                    <p className="m-0">
+                      Revenue Leak: Structured Data for Success!
+                    </p>
+                  </h1>
+                  <div className="w-[562px] relative text-xl tracking-[-0.02em] leading-[32px] text-light-text-sw inline-block max-w-full mq450:text-base mq450:leading-[26px]">
+                    The freight logistics and supply chain industry's data
+                    problem hampers automation, growth, and customer
+                    acquisition. Solving it through reliable, structured data is
+                    key to future success
+                  </div>
+                </div>
+              </div>
               <img
                 className="w-[588px] relative max-h-full object-cover max-w-full mq1350:flex-1"
                 loading="lazy"

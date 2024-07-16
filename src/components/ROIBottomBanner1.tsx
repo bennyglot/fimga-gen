@@ -1,29 +1,15 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import { FunctionComponent } from "react";
 
 export type ROIBottomBannerType = {
   className?: string;
-
-  /** Style props */
-  propFlex?: CSSProperties["flex"];
-  propAlignSelf?: CSSProperties["alignSelf"];
 };
 
 const ROIBottomBanner: FunctionComponent<ROIBottomBannerType> = ({
   className = "",
-  propFlex,
-  propAlignSelf,
 }) => {
-  const rOIBottomBannerStyle: CSSProperties = useMemo(() => {
-    return {
-      flex: propFlex,
-      alignSelf: propAlignSelf,
-    };
-  }, [propFlex, propAlignSelf]);
-
   return (
     <div
-      className={`flex-1 flex flex-row items-start justify-start py-[35px] px-[249px] box-border relative min-h-[320px] max-w-full z-[1] text-left text-18xl text-light-background-sw font-x-hp-title mq450:pl-5 mq450:pr-5 mq450:box-border mq925:pl-[62px] mq925:pr-[62px] mq925:box-border mq1350:pl-[124px] mq1350:pr-[124px] mq1350:box-border ${className}`}
-      style={rOIBottomBannerStyle}
+      className={`self-stretch flex flex-row items-start justify-start py-[35px] px-[249px] box-border relative min-h-[320px] max-w-full text-left text-18xl text-light-background-sw font-x-hp-title mq1350:pl-[124px] mq1350:pr-[124px] mq1350:box-border mq450:pl-5 mq450:pr-5 mq450:box-border mq900:pl-[62px] mq900:pr-[62px] mq900:box-border ${className}`}
     >
       <img
         className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full object-cover"
@@ -34,7 +20,7 @@ const ROIBottomBanner: FunctionComponent<ROIBottomBannerType> = ({
       <div className="w-[701px] flex flex-col items-start justify-start gap-[26px] max-w-full z-[1]">
         <div className="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-px box-border max-w-full">
           <div className="flex-1 flex flex-col items-start justify-start gap-[2px] max-w-full">
-            <h1 className="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[60px] font-semibold font-inherit mq450:text-3xl mq450:leading-[36px] mq925:text-11xl mq925:leading-[48px]">
+            <h1 className="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[60px] font-semibold font-inherit mq450:text-3xl mq450:leading-[36px] mq900:text-11xl mq900:leading-[48px]">
               See ROI in 12 weeks
             </h1>
             <div className="w-[600px] relative text-xl font-light text-line-sw inline-block max-w-full mq450:text-base">

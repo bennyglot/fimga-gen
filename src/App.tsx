@@ -6,7 +6,9 @@ import {
   useLocation,
 } from "react-router-dom";
 import Homepage from "./pages/Homepage";
+import UsecasesShippersProcurem from "./pages/UsecasesShippersProcurem";
 import UsecasesShippersSales from "./pages/UsecasesShippersSales";
+import UsecasesShippersOperatio from "./pages/UsecasesShippersOperatio";
 
 function App() {
   const action = useNavigationType();
@@ -28,7 +30,15 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/usecases-shippers-procurement-carrier-contracted-buy-prices":
+        title = "";
+        metaDescription = "";
+        break;
       case "/usecases-shippers-sales-purchase-orders":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/usecases-shippers-operations-loading-lists":
         title = "";
         metaDescription = "";
         break;
@@ -52,8 +62,16 @@ function App() {
     <Routes>
       <Route path="/" element={<Homepage />} />
       <Route
+        path="/usecases-shippers-procurement-carrier-contracted-buy-prices"
+        element={<UsecasesShippersProcurem />}
+      />
+      <Route
         path="/usecases-shippers-sales-purchase-orders"
         element={<UsecasesShippersSales />}
+      />
+      <Route
+        path="/usecases-shippers-operations-loading-lists"
+        element={<UsecasesShippersOperatio />}
       />
     </Routes>
   );

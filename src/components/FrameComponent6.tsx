@@ -1,12 +1,10 @@
 import { FunctionComponent } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Form } from "react-bootstrap";
 
-export type FrameComponent3Type = {
+export type FrameComponent6Type = {
   className?: string;
 };
 
-const FrameComponent3: FunctionComponent<FrameComponent3Type> = ({
+const FrameComponent6: FunctionComponent<FrameComponent6Type> = ({
   className = "",
 }) => {
   return (
@@ -56,10 +54,46 @@ const FrameComponent3: FunctionComponent<FrameComponent3Type> = ({
               <a className="[text-decoration:none] w-[61px] relative text-[inherit] flex items-center shrink-0">
                 Home
               </a>
-              <Form.Select className="font-x-hp-title text-base text-blue-sw" />
-              <Form.Select className="font-x-hp-title text-base text-dark-blue-sw" />
-              <Form.Select className="font-x-hp-title text-base text-dark-blue-sw" />
-              <Form.Select className="w-20 font-x-hp-title text-base text-dark-blue-sw" />
+              <div className="flex flex-row items-start justify-start text-blue-sw">
+                <a className="[text-decoration:underline] relative text-[inherit] inline-block min-w-[80px]">
+                  Solutions
+                </a>
+                <img
+                  className="h-6 w-6 relative object-cover min-h-[24px]"
+                  alt=""
+                  src="/component-4@2x.png"
+                />
+              </div>
+              <div className="flex flex-row items-start justify-start">
+                <a className="[text-decoration:none] relative text-[inherit] inline-block min-w-[90px] whitespace-nowrap">
+                  Use Cases
+                </a>
+                <img
+                  className="h-6 w-6 relative object-cover min-h-[24px]"
+                  alt=""
+                  src="/component-4-1@2x.png"
+                />
+              </div>
+              <div className="flex flex-row items-start justify-start">
+                <a className="[text-decoration:none] relative text-[inherit] inline-block min-w-[90px]">
+                  Resources
+                </a>
+                <img
+                  className="h-6 w-6 relative object-cover min-h-[24px]"
+                  alt=""
+                  src="/component-4-1@2x.png"
+                />
+              </div>
+              <div className="w-20 flex flex-row items-start justify-start">
+                <a className="[text-decoration:none] flex-1 relative text-[inherit]">
+                  About
+                </a>
+                <img
+                  className="h-6 w-6 relative object-cover min-h-[24px]"
+                  alt=""
+                  src="/component-4-1@2x.png"
+                />
+              </div>
               <a className="[text-decoration:none] relative text-[inherit] inline-block min-w-[67px]">
                 Contact
               </a>
@@ -84,4 +118,4 @@ const FrameComponent3: FunctionComponent<FrameComponent3Type> = ({
   );
 };
 
-export default FrameComponent3;
+export default FrameComponent6;
